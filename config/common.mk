@@ -5,7 +5,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # SuperSU
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/supersu/supersu.zip:system/supersu/supersu.zip
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
     mount.ntfs
 
 # Custom JDCTeam packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     BluetoothExt \
     GoogleDialer \
     LatinIME \
@@ -64,32 +64,32 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=0
     
 # For keyboard gesture typing
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # LEDify
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/ledify:system/bin/ledify
     
 # init.d support
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # JDC-specific init file
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/etc/init.local.rc:root/init.jdc.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Enable wireless Xbox 360 controller support
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
     
 # OTA Updates
